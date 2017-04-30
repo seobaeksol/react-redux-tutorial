@@ -1,4 +1,4 @@
-import { INCREMNT, DECREMENT, SET_DIFF } from '../actions';
+import { INCREMENT, DECREMENT, SET_DIFF } from '../actions';
 import { combineReducers } from 'redux';
 
 const counterInitialState = {
@@ -8,7 +8,7 @@ const counterInitialState = {
 
 const counter = (state = counterInitialState, action) => {
     switch(action.type) {
-        case INCREMNT:
+        case INCREMENT:
             return Object.assign({}, state, {
                 value: state.value + state.diff
             });

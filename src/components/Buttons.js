@@ -7,7 +7,7 @@ class Buttons extends Component {
         return (
             <div>
                 <button type="button" onClick={this.props.onIncrement}>+</button>
-                <button type="button" onClick={this.props.onIncrement}>-</button>
+                <button type="button" onClick={this.props.onDecrement}>-</button>
             </div>
         );
     }
